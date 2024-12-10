@@ -1,0 +1,11 @@
+.add-team-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.add-team-page h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
