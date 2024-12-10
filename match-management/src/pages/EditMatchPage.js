@@ -11,7 +11,7 @@ const EditMatchPage = () => {
 
   useEffect(() => {
     // Fetch the match data based on the match ID
-    axios.get(`http://localhost:5000/api/matches/${id}`)
+    axios.get(`https://football-club-chi.vercel.app/api/matches/${id}`)
       .then((response) => {
         setMatch(response.data);  // Populate the form with existing match data
         setLoading(false);  // Set loading to false after fetching the data
@@ -24,7 +24,7 @@ const EditMatchPage = () => {
 
   const handleSubmit = (updatedMatchData) => {
     // Update the match data in the backend
-    axios.put(`http://localhost:5000/api/matches/${id}`, updatedMatchData)
+    axios.put(`https://football-club-chi.vercel.app/api/matches/${id}`, updatedMatchData)
       .then((response) => {
         console.log('Match updated:', response.data);
         navigate('/');  // Redirect to home page after update

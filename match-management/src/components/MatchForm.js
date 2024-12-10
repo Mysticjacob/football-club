@@ -15,7 +15,7 @@ const MatchForm = ({ matchData, onSubmit }) => {
       setTeam2(matchData.team2._id);
     }
 
-    axios.get('http://localhost:5000/api/teams')
+    axios.get('https://football-club-chi.vercel.app/api/teams')
       .then((response) => setAllTeams(response.data))
       .catch((error) => console.error('Error fetching teams:', error));
   }, [matchData]);

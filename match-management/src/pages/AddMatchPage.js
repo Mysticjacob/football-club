@@ -7,7 +7,7 @@ const AddMatchPage = () => {
   const navigate = useNavigate();
 
   const handleAddMatch = (matchData) => {
-    axios.post('http://localhost:5000/api/matches', matchData)
+    axios.post('https://football-club-chi.vercel.app/api/matches', matchData)
       .then(() => navigate('/')) // Redirect to the Home Page
       .catch((error) => console.error('Error adding match:', error));
   };

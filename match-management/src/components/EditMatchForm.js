@@ -17,7 +17,7 @@ const EditMatchForm = ({ match, onSubmit }) => {
     }
 
     // Fetch all teams
-    axios.get('http://localhost:5000/api/teams')
+    axios.get('https://football-club-chi.vercel.app/api/teams')
       .then((response) => {
         setAllTeams(response.data);
         setLoading(false);
